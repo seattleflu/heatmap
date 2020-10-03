@@ -71,7 +71,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--metadata', type=str, required=True, help="Seattle metadata file as used by augur (not to be committed)")
     parser.add_argument('--lat-longs', type=str, required=True, help="census tract to lat long mapping file")
-    parser.add_argument('--site-categories', nargs='+', type=str, default=['clinical', 'community'], help="site categories to include")
+    parser.add_argument('--site-categories', nargs='+', type=str, default=['hospital', 'community'], help="site categories to include")
     parser.add_argument('--age-categories', nargs='+', type=str, default=['adult', 'child'], help="age categories to include")
     parser.add_argument('--output', type=str, help="output GeoJSON file")
     args = parser.parse_args()
